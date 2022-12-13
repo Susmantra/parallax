@@ -1,0 +1,154 @@
+body {
+  margin: 0;
+}
+video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.video {
+  position: relative;
+}
+.video > div {
+  position: absolute;
+  top: 200px;
+  font-size: 20px;
+  color: white;
+  background: rgba(0, 0, 0, 0.704);
+  left: 30vw;
+  padding: 2rem;
+  border-radius: 10px;
+  display: flex;
+}
+
+.go-down {
+  position: absolute;
+  left: 50%;
+  bottom: 60px;
+  font-size: 3rem;
+  color: white;
+  font-weight: bolder;
+
+  transform: rotate(90deg);
+  animation: down 1s ease-out infinite;
+}
+
+@keyframes down {
+  0% {
+    left: 50%;
+    bottom: 80px;
+    color: yellow;
+  }
+
+  50% {
+    bottom: 50px;
+    color: rgb(0, 255, 149);
+  }
+
+  100% {
+    bottom: 20px;
+    color: magenta;
+  }
+}
+
+nav {
+  background: rgb(243, 210, 210);
+  position: sticky;
+  top: 0;
+  padding: 1rem;
+  margin-top: -3px;
+}
+
+.container {
+  padding: 1rem;
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+}
+.container > ul {
+  display: flex;
+  list-style-type: none;
+
+  margin: 0;
+  padding: 0;
+}
+
+.container > ul > li {
+  margin-left: 1rem;
+}
+
+.para {
+  background: rgb(29, 27, 27);
+  color: rgb(174, 171, 171);
+  padding: 2rem;
+}
+
+.img1,
+.img2,
+.img3,
+.img4 {
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.img1 {
+  background: url(img/dd.jpg) no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.img2 {
+  background: url(img/ff.jpg) no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.img3 {
+  background: url(img/gg.jpg) no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.img4 {
+  background: url(img/bb.jpg) no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.title {
+  background: #000;
+  color: white;
+  font-size: 3rem;
+  padding: 1rem 3rem;
+  border-radius: 5px;
+  text-transform: uppercase;
+  letter-spacing: 1rem;
+
+  display: flex;
+  align-items: center;
+}
+.go-up {
+  background: rgba(81, 176, 207, 0.693);
+  font-size: 3rem;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+
+  transform: rotate(270deg);
+
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+a.go-up {
+  text-decoration: none;
+}
+
